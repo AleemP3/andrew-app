@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Home from "./components/Home"; 
+import Login from "./components/Login";
+import Navbar from "./components/Navbar"; 
+import Journals from "./components/Journals"; 
+import JournalForm from "./components/JournalForm";
+import FetchUser from "./components/FetchUser"; 
+import { Route, Switch } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+
+const App = () => {
+
+  
+  return(
+    <>
+      <FetchUser>
+        <div>
+          <div className="app-navbar-container">
+            <Navbar />
+          </div>
+          <Switch>
+            <Route exact path="/" component={Home} /> 
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/journals" component={Journals} />
+            <Route exact path="/journals/new" component={JournalForm} />
+          </Switch>
+        </div>
+      </FetchUser>
+    </>
   );
-}
+;}
 
 export default App;

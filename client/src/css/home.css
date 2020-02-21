@@ -1,0 +1,24 @@
+.main-home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: #F9F9F9;
+}
+.home-pic-bio-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem 1rem 3.3rem;
+}
+.pic {
+  text-align: center;
+}
+.andrew-pic {
+  width: 360px;
+  height: 480px;
+  border-radius: 15%;
+}
+.bio {
+  text-align: right;
+}

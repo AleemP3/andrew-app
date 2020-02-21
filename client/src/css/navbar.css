@@ -1,0 +1,40 @@
+.main-navbar-container {
+  display: flex;
+  flex-direction: row; 
+  height: 7.5vh;
+  justify-content: space-between;
+  background-color: #2C37D3; 
+}
+.left-side-navbar {
+  display: flex;
+  width: 100%
+}
+.navbar-div-icon {
+  padding: 1.2rem 1rem 1rem 1.5rem;
+}
+.navbar-div-email {
+  padding: 1.5rem;
+  color: white; 
+}
+.navbar-div {
+  padding: 1.3rem 1rem 1rem 1rem;
+}
+
+.right-side-navbar {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.navbar-home-div {
+  display: flex;
+ 
+}
+.navbar-stories-div {
+  display: flex;
+}
+.links {
+  text-decoration: none; 
+  color: white;
+  font-size: 20px;
+}
