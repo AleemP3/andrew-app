@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Poppins|Roboto&display=swap');
+/* font-family: 'Merriweather', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
 .main-home-container {
   display: flex;
   flex-direction: column;
@@ -10,6 +15,12 @@
   display: flex;
   justify-content: space-between;
   padding: 2rem 3rem 1rem 3.3rem;
+  margin: 1rem 4rem 1rem 4rem;
+  border-left: black solid; 
+  border-right: black solid;
+}
+.about-me-header {
+  text-align: center;
 }
 .pic {
   text-align: center;
@@ -21,4 +32,30 @@
 }
 .bio {
   text-align: right;
+  font-family: 'Poppins', sans-serif;
+}
+.andrew-pic-test {
+  width: 250px;
+  height: 320px;
+  border-radius: 15%;
+  margin-right: 4rem;
+}
+.andrew-pic-last {
+  width: 250px;
+  height: 320px;
+  border-radius: 15%;
+}
+.favorite-authors-books-div {
+  text-align: center;
+}
+.book-title {
+  margin-right: 4rem;
+}
+.favorite-authors-books-div-last {
+  text-align: center;
+}
+.favorite-authors-books {
+ display: flex;
+ font-size: 10px; 
+ justify-content: flex-end;
 }
